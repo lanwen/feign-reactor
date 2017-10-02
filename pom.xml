@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.ilaborie</groupId>
+    <groupId>com.github.lanwen</groupId>
     <artifactId>feign-reactor</artifactId>
     <version>0.0.2</version>
     <name>Feign Reactor</name>
@@ -13,8 +13,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- Dependencies -->
-        <feign.version>9.3.1</feign.version>
-        <reactor.core.version>3.0.3.RELEASE</reactor.core.version>
+        <feign.version>9.5.1</feign.version>
+        <reactor.core.version>3.1.0.RELEASE</reactor.core.version>
 
         <!-- Tests -->
         <junit.version>4.12</junit.version>
@@ -41,11 +41,13 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.assertj</groupId>
             <artifactId>assertj-core</artifactId>
             <version>${assertj.version}</version>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>io.github.openfeign</groupId>
@@ -67,9 +69,10 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>io.projectreactor.addons</groupId>
+            <groupId>io.projectreactor</groupId>
             <artifactId>reactor-test</artifactId>
             <version>${reactor.core.version}</version>
+            <scope>test</scope>
         </dependency>
     </dependencies>
 

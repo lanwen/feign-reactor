@@ -1,1 +1,26 @@
-target/
+# IDEA Files
+.idea
+*.iml
+*.ipr
+*.iws
+
+# Maven
+target
+
+.gradle
+build
+out
+
+# PhantomJs
+phantomjsdriver.log
+
+node_modules
+node
+etc
+coverage
+
+/**/main/**/tvm.properties
+sender.properties
+
+
+.DS_Store
